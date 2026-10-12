@@ -1,0 +1,39 @@
+if(condition)    ///condition is true what to do
+{
+
+}
+======================
+if(condition)
+{
+
+}
+else
+{
+
+}
+=======================
+if(condition)
+{
+
+}
+else if(condition)
+{
+
+}
+else if(condition)
+{
+
+}
+....
+....
+....
+else
+{
+
+}
+=============
+
+
+
+
+

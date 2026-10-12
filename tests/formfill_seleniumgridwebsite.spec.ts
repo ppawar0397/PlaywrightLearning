@@ -1,0 +1,18 @@
+import { test } from '@playwright/test';
+test("Login into Form Demo", async ({ page }) => {
+    await page.goto("https://www.testmuai.com/selenium-playground/input-form-demo/")
+    await page.locator("//input[@name='name']").fill("Srinivas")
+    await page.locator("//input[@id='inputEmail4']").fill("srinivas123@gmail.com")
+    await page.locator("//input[@name='password']").fill("12345")
+    await page.locator("//input[@name='company']").fill("netcracker")
+    await page.locator("//input[@name='website']").fill("www.netcracker.com")
+    await page.locator("//select[@name='country']").selectOption("India")
+    await page.locator("//input[@name='city']").fill("Hyderabad")
+    await page.locator("//input[@name='address_line1']").fill("Rain Tree Park")
+    await page.locator("//input[@name='address_line2']").fill("KPHB Colony")
+    ///await page.locator("//input[@placeholder ='State']").fill("Telangana")
+    await page.getByPlaceholder("State").fill("Andhra Pradesh")
+    await page.locator("//input[@name='zip']").fill("500085")
+    ///await page.getByText("Submit").click() 
+    await page.pause() 
+})

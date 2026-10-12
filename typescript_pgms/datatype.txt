@@ -1,0 +1,69 @@
+datatype
+
+   specifies the type of data stored in the system.
+
+	Employee
+	---------
+	empid	empname		design		phone		salary		projectstatus
+		string             str             str             number           Boolean (true/false)
+
+
+string can store---- chars, digits,specialchars.
+x=100 ---- hundred
+y="100" --- one zero zero
+
+phone---"877899001"
+number---------10  24  38         45.50   30.25-------can store any type of digits like int,float
+
+any ---------can take any type of data,,, it will disable the checking of datatype.
+
+======================================
+
+/// type inference  .... based on the default value assigned it will automatically consider the datatype
+let x=10------- automatically x will treated as number
+let y="hello"------y is automatically treated as string
+ 
+Note:  in javascript  we don't have option to explicitly specify the datatype.
+       in typescript if we need , we can explicitly specify the datatype.
+
+//type annotation..... explicity specify the datatype for the variab;e
+let x:number   let y:string   ( :dataype)
+
+let x:number =10 ---------- strictly telling x is number datatype
+==========================
+let/var/const :  to declare a variable we have to use these keywords
+	
+	let x=10
+	var y=20
+	const z=30
+
+var ,let are similar
+		if a variable is declared using var, it can be redeclared again if required.
+			var x=10 ---------declared x variable and assigned 10.
+
+			var x=200-------- redeclared x variable and assigned 200.
+
+	        if a variable is declared using let, it cannot be redeclared again.
+			let x=10---------------declared x
+
+			let x=200----ERROR --again cannot redeclare.
+
+const-------------if a variable is declared using const, cannot reassign a value or redeclare.
+
+			const x=10 -----------x value is always 10.
+
+			x=x+1;----------ERROR cannot change the x value.
+==============================================
+
+let x:string|number
+  here x will allow to store either string or number
+
+
+custom datatype
+
+type t1: string|number   ///t1 type can allow string or number
+
+let x:t1 =10
+x="hello"
+=====================================
+
